@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
     <title>Login - FitZone</title>
 </head>
 <body>
@@ -11,7 +12,7 @@
         <h1>Login to FitZone</h1>
     </header>
     <main>
-        <form action="submit_contact.php" method="post">
+        <form action="authenticate_user.php" method="post">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
             <label for="password">Password:</label>
