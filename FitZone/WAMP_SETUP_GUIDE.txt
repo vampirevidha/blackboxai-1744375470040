@@ -1,0 +1,79 @@
+FITZONE - WAMP SERVER SETUP GUIDE
+================================
+
+1. Install WAMP Server
+---------------------
+- Download WAMP Server from: https://www.wampserver.com/en/
+- Install WAMP Server (keep all default settings)
+- Wait for the WAMP icon to turn green in the system tray
+
+2. Copy Project Files
+--------------------
+- Extract fitzone.zip
+- Copy the entire 'FitZone' folder
+- Paste it into: C:\wamp64\www\
+  (Your website will be accessible at: http://localhost/FitZone)
+
+3. Setup Database
+----------------
+- Open your web browser
+- Go to: http://localhost/phpmyadmin
+- Default login:
+  Username: root
+  Password: (leave blank)
+
+4. Import Database
+-----------------
+- In phpMyAdmin:
+  1. Click "Import" in the top menu
+  2. Click "Choose File"
+  3. Navigate to: C:\wamp64\www\FitZone\db\fitzone.sql
+  4. Click "Go" at the bottom
+  5. Wait for the import to complete
+
+5. Configure Database Connection
+------------------------------
+- Open: C:\wamp64\www\FitZone\db\config.php
+- Update the database settings if needed:
+  $host = 'localhost';
+  $dbname = 'fitzone_db';
+  $username = 'root';
+  $password = '';
+
+6. Test the Website
+------------------
+- Open your web browser
+- Go to: http://localhost/FitZone
+- The website should now work with the database
+
+Default Login Credentials
+------------------------
+Admin User:
+- Email: admin@fitzone.com
+- Password: password
+
+Regular User:
+- Email: john@example.com
+- Password: password
+
+Troubleshooting
+--------------
+1. If you see a blank page:
+   - Check WAMP is running (icon should be green)
+   - Check all files are in the correct location
+   - Check PHP error logs in WAMP
+
+2. If database connection fails:
+   - Verify WAMP MySQL service is running
+   - Check database credentials in config.php
+   - Make sure database 'fitzone_db' exists
+
+3. If you can't access phpMyAdmin:
+   - Make sure WAMP is running
+   - Try: http://127.0.0.1/phpmyadmin instead of localhost
+
+Need Help?
+---------
+- Check WAMP documentation: https://www.wampserver.com/en/documentation.php
+- Check PHP error logs in WAMP
+- Verify all file permissions are correct
