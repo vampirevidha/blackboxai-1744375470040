@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/script.js" defer></script>
     <title>Contact Us - FitZone</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     </header>
     <main>
         <h2>Get in Touch</h2>
-        <form action="submit_contact.php" method="post">
+        <form action="../submit_contact.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
